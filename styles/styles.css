@@ -1,0 +1,69 @@
+
+/* Estilos del Contenedor del Logo */
+    .logo-container {
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    /* Icono Nutricional hecho solo con CSS */
+    .logo-icon {
+      width: 45px;
+      height: 45px;
+      background: linear-gradient(135deg, #2E7D32, #00C897);
+      border-radius: 50% 12% 50% 50%; /* Forma orgánica de hoja/semilla */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(46, 125, 50, 0.2);
+    }
+
+    /* Estilos del Texto */
+    .logo-text-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Texto Principal (Escribe aquí el nombre) */
+    .brand-name {
+      font-size: 32px;
+      font-weight: 800;
+      color: #1B4D3E;
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+
+    /* Parte destacada del nombre */
+    .brand-highlight {
+      color: #2E7D32;
+    }
+
+    /* Subtítulo / Tagline (Escribe aquí la especialidad) */
+    .brand-tagline {
+      font-size: 11px;
+      font-weight: 600;
+      color: #6B7C93;
+      letter-spacing: 3px;
+      margin-top: 4px;
+      text-transform: uppercase;
+    }
+  
+
+ /* inicio de el logo
+  <div class="logo-container">
+    <!-- Icono gráfico -->
+    <div class="logo-icon">✓</div>
+    
+    <!-- Textos del Logo (Cambia los textos directamente aquí) -->
+    <div class="logo-text-box">
+      <span class="brand-name">Nutri<span class="brand-highlight">Vida</span></span>
+      <span class="brand-tagline">Clínica Nutricional</span>
+    </div>
+  </div>
+  <!-- ===================== FIN DEL LOGO ===================== -->
