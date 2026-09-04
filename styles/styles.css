@@ -1,4 +1,78 @@
 
+
+/* =========================================================
+   PALETA DE COLORES - NUTRIVIDA (Variables Globales)
+   ========================================================= */
+:root {
+  /* Colores de Marca */
+  --color-primario: #2E7D32;      /* Verde oscuro - Salud y confianza */
+  --color-secundario: #00C897;    /* Verde menta - Modernidad y frescura */
+  --color-acento: #F39C12;        /* Naranja cálido - Call to Action (Botones) */
+  
+  /* Colores de Fondo */
+  --bg-principal: #F9FCFA;        /* Blanco clínico suave - Fondo de la página */
+  --bg-tarjetas: #FFFFFF;         /* Blanco puro - Para los contenedores y tarjetas */
+  
+  /* Colores de Texto */
+  --texto-titulos: #1B4D3E;       /* Verde muy oscuro casi negro - Títulos (h1, h2, h3) */
+  --texto-parrafos: #2C3E50;      /* Azul pizarra - Textos de lectura general */
+  --texto-suave: #6B7C93;         /* Gris azulado - Subtítulos o textos secundarios */
+
+  /* Colores de Sistema (Para las validaciones JS del Integrante 3) */
+  --color-exito: #27AE60;         /* Para mensajes de "Registro exitoso" */
+  --color-error: #E74C3C;         /* Para mensajes de "Contraseña incorrecta" */
+  --color-alerta: #F1C40F;        /* Para advertencias */
+}
+
+/* =========================================================
+   ESTILOS BASE (Ejemplo de cómo aplicar las variables)
+   ========================================================= */
+body {
+  background-color: var(--bg-principal);
+  color: var(--texto-parrafos);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  color: var(--texto-titulos);
+}
+
+/* Ejemplo de un Botón Principal */
+.btn-primario {
+  background-color: var(--color-primario);
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primario:hover {
+  background-color: var(--color-secundario);
+}
+
+/* Ejemplo del Botón de Agendar o Comprar */
+.btn-accion {
+  background-color: var(--color-acento);
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(243, 156, 18, 0.3);
+}
+
+.btn-accion:hover {
+  background-color: #D68910; /* Un tono naranja un poco más oscuro */
+}
+
+/*LOGO*/
+
 /* Estilos del Contenedor del Logo */
     .logo-container {
       display: inline-flex;
@@ -67,3 +141,4 @@
     </div>
   </div>
   <!-- ===================== FIN DEL LOGO ===================== -->
+
