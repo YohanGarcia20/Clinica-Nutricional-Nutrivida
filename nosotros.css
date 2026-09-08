@@ -1,0 +1,17 @@
+/* 1. Convertimos la tarjeta en un contenedor flexible */
+.miembro-card {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente (foto, título, texto) */
+    align-items: center;    /* Centra horizontalmente todo lo que está adentro */
+    text-align: center;     /* Centra también los textos (títulos y párrafos) */
+    padding: 20px;          /* Un poco de espacio interno para que respire */
+}
+
+/* 2. Controlamos el tamaño y aseguramos el centrado de la imagen */
+.miembro-card img {
+    width: 150px;       /* Define un ancho fijo para que todas sean iguales */
+    height: 150px;      /* Define un alto fijo para hacerlas cuadradas o circulares */
+    object-fit: cover;  /* Evita que la foto se deforme */
+    border-radius: 50%; /* Opcional: si quieres que la foto del nutricionista quede redonda tipo avatar */
+    margin-bottom: 15px; /* Separa un poco la foto del texto de abajo */
+}
