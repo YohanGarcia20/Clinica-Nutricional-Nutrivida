@@ -1,12 +1,131 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NutriVida - Clínica Nutricional</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <div id="logo-image">
+            <img src="assets/logoNutriVida.jfif" alt="Logo NutriVida" width="100" height="100">
+            <span id="logo-text">NutriVida</span> 
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <div class="user-acciones">
+                <ul>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                    <li><a href="registro.html">Registrar usuario</a></li>
+                    <li><a href="misServicios.html" class="cart-icon">Mis productos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero"> <!-- Hero: bloque principal gigante en el código -->
+            <div class="hero-text">
+                <h1>Nutrición personalizada para cada objetivo</h1>
+                <p>En NutriVida te acompañamos en pérdida de peso, control de enfermedades metabólicas, nutrición
+                    deportiva y alimentación vegetariana o vegana, con seguimiento profesional en cada etapa.</p>
+                <a href="servicios.html" id="btn-hero">Ver servicios</a>
+            </div>
+            <img src="assets/Nutricionista-atendiendo-consulta.jfif"
+                alt="Nutricionista atendiendo a un paciente en consulta" width="300" height="200">
+        </section>
+
+        <section class="servicios">
+            <h2>Nuestros servicios</h2>
+            <ul class="servicios-grid">
+                <li>
+                    <article class="servicio-card">
+                        <img src="assets/perdidaPeso.jfif" alt="Servicio de pérdida de peso">
+                        <h3>Plan de pérdida de peso</h3>
+                        <p>Plan de control de peso $25.000</p>
+                        <a href="servicios.html" class="btn-secundario">Agendar hora</a>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="servicio-card">
+                        <img src="assets/EnfermedadesMetabolicas.jfif"
+                            alt="Servicio de control de enfermedades metabólicas">
+                        <h3>Control metabólico</h3>
+                        <p>Seguimiento de diabetes, hipertensión y otras enfermedades metabólicas $30.000</p>
+                        <a href="servicios.html" class="btn-secundario">Agendar hora</a>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="servicio-card">
+                        <img src="assets/nutricionDeportiva.jfif" alt="Servicio de nutrición deportiva">
+                        <h3>Nutrición deportiva</h3>
+                        <p>Plan para rendimiento físico $37.000</p>
+                        <a href="servicios.html" class="btn-secundario">Agendar hora</a>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="servicio-card">
+                        <img src="assets/vegan.jpg" alt="Servicio de alimentación vegetariana y vegana">
+                        <h3>Vegetariana / vegana</h3>
+                        <p>Plan alimenticio sin productos animales $25.000</p>
+                        <a href="servicios.html" class="btn-secundario">Agendar hora</a>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="servicio-card">
+                        <img src="assets/nutricionInfantil.jpg" alt="Servicio de nutrición infantil">
+                        <h3>Nutrición infantil</h3>
+                        <p>Plan alimenticio para niños $25.000</p>
+                        <a href="servicios.html" class="btn-secundario">Agendar hora</a>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="servicio-card">
+                        <img src="assets/embarazo.jfif" alt="Servicio de nutrición en embarazo y lactancia">
+                        <h3>Embarazo y lactancia</h3>
+                        <p>Seguimiento nutricional para el embarazo $28.000</p>
+                        <a href="servicios.html" class="btn-secundario">Agendar hora</a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p>NutriVida — Clínica Nutricional</p>
+            <p>Temuco, Región de La Araucanía</p>
+        </div>
+        <nav class="footer-links">
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <form class="newsletter">
+            <label for="email-news">Recibe consejos de nutrición:</label>
+            <input type="email" id="email-news" name="email-news" placeholder="Ingresa tu correo" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
