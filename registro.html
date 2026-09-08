@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriVida - Clínica Nutricional</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo-image">
+            <img src="assets/logoNutriVida.jfif" alt="Logo NutriVida" width="100" height="100">
+            <span id="logo-text">NutriVida</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <div class="user-acciones">
+                <ul>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                    <li><a href="registro.html">Registrar usuario</a></li>
+                    <li><a href="misServicios.html" class="cart-icon">Mis productos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="formulario-registro">
+            <h1>Registro de usuario</h1>
+
+            <form>
+                <div class="campo-formulario">
+                    <label for="run">RUN (sin puntos ni guión)</label>
+                    <input type="text" id="run" name="run" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="primer-apellido">Primer apellido</label>
+                    <input type="text" id="primer-apellido" name="primer-apellido" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="segundo-apellido">Segundo apellido</label>
+                    <input type="text" id="segundo-apellido" name="segundo-apellido">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="confirmar-contrasena">Confirmar contraseña</label>
+                    <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="region">Región</label>
+                    <select id="region" name="region">
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="comuna">Comuna</label>
+                    <select id="comuna" name="comuna">
+                    </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                </div>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-info">
+            <p>NutriVida — Clínica Nutricional</p>
+            <p>Temuco, Región de La Araucanía</p>
+        </div>
+        <nav class="footer-links">
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <form class="newsletter">
+            <label for="email-news">Recibe consejos de nutrición:</label>
+            <input type="email" id="email-news" name="email-news" placeholder="Ingresa tu correo" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
