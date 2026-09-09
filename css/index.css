@@ -2,3 +2,42 @@ header, footer {
     background-color: #00ffdd;
     padding: 10px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00ffdd;
+    padding: 10px 20px;
+}
+
+/* Agrupa el logo y su texto en horizontal */
+#logo-image {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Alinea las listas de navegación en horizontal */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre el menú principal y las acciones de usuario */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* Espacio entre cada enlace del menú */
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegura que las acciones de usuario también estén en horizontal */
+.user-acciones ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}

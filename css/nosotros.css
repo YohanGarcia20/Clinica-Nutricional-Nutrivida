@@ -15,3 +15,25 @@
     border-radius: 50%; /* Opcional: si quieres que la foto del nutricionista quede redonda tipo avatar */
     margin-bottom: 15px; /* Separa un poco la foto del texto de abajo */
 }
+
+
+header {
+    background-color: #cc9c43;
+    padding: 10px;
+}
+
+/* 1. Hacemos que la barra de navegación (<nav>) controle todo en horizontal */
+nav {
+    display: flex;
+    justify-content: space-between; /* Pone un grupo a la izquierda y el otro a la derecha */
+    align-items: center;            /* Los centra verticalmente */
+}
+
+/* 2. Limpiamos y ponemos en horizontal las listas */
+nav ul {
+    list-style: none;     /* Quita los puntos */
+    display: flex;        /* Pone los ítems en horizontal */
+    gap: 20px;            /* Espacio entre cada palabra/enlace */
+    padding: 0;           
+    margin: 0;            
+}
