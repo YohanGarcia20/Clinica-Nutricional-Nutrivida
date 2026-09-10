@@ -1,0 +1,61 @@
+:root {
+  --color-primario: #2E7D5B;
+  --color-primario-oscuro: #1F5A40;
+  --color-acento: #8BC34A;
+  --color-fondo: #FAF9F6;
+  --color-texto: #2B2B2B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: Arial, sans-serif;
+}
+
+.navbar, footer {
+  background-color: var(--color-primario) !important;
+}
+
+.navbar-brand, .nav-link, footer, footer a {
+  color: white !important;
+}
+
+.btn-nutrivida {
+  background-color: var(--color-acento);
+  border-color: var(--color-acento);
+  color: white;
+}
+
+.btn-nutrivida:hover {
+  background-color: var(--color-primario-oscuro);
+  border-color: var(--color-primario-oscuro);
+  color: white;
+}
+
+.hero, .formulario-login .login-box, .formulario-registro, .blog-detalle {
+  padding: 2rem;
+}
+
+.servicio-card, .miembro-card, .blog-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  height: 100%;
+}
+
+.miembro-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.campo-formulario {
+  margin-bottom: 1rem;
+}
